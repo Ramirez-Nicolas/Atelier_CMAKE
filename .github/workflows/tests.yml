@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: Compilation
         run: |
-          last_directory=$(basename ${{ github.workspace }}
+          last_directory=$(basename ${{ github.workspace }})
           git clone https://github.com/${{ github.repository }}.git
           cd ./$last_directory
           mkdir build
